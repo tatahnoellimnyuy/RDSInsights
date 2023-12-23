@@ -62,7 +62,7 @@ def lambda_handler(event, context):
                 ],
                 'Timestamp': data_point['Timestamp'],
                 'Value': data_point['Value'],
-                'Unit': 'None'  # Replace 'None' with the appropriate unit for your metric
+                'Unit': 'None'  # will replace with unit
             }
             for data_point in metric_data['DataPoints']
         ]
